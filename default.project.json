@@ -10,12 +10,24 @@
 
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
-      "$path": "src/ReplicatedStorage"
+      "$path": "src/ReplicatedStorage",
+      "Vendor": {
+        "$className": "Folder",
+        "Promise": {
+          "$path": "submodules/Promise/lib"
+        }
+      }
     },
 
     "ServerScriptService": {
       "$className": "ServerScriptService",
-      "$path": "src/ServerScriptService"
+      "$path": "src/ServerScriptService",
+      "Vendor": {
+        "$className": "Folder",
+        "DataStore2": {
+          "$path": "submodules/DataStore2/DataStore2"
+        }
+      }
     },
 
     "StarterGui": {
