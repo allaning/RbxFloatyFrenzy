@@ -12,7 +12,9 @@ local camera = Workspace.CurrentCamera
 local player = Players.LocalPlayer
 
 -- Constant variable used to set the camera's offset from the player
-local CAMERA_OFFSET = Vector3.new(-22, 22, 0)
+local X_ANGLE = -22
+local Y_HEIGHT = 24
+local CAMERA_OFFSET = Vector3.new(X_ANGLE, Y_HEIGHT, 0)
 
 -- Enables the camera to do what this script says
 camera.CameraType = Enum.CameraType.Scriptable
@@ -29,7 +31,7 @@ end)
 
 -- Called every time the screen refreshes
 local function onRenderStep()
-	-- Check the player's character has spawned
+	-- Check if the player's character has spawned
 	if character then
 		local playerPosition = character.HumanoidRootPart.Position
 		local cameraPosition = playerPosition + CAMERA_OFFSET
